@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+    
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_margin="15dp"
+        android:id="@+id/word_edittext"
+        android:hint="Word"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_margin="15dp"
+        android:id="@+id/synonim_edittext"
+        android:hint="Synonyms (split them with a comma)"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_margin="15dp"
+        android:id="@+id/translation_edittext"
+        android:hint="Translation"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Spinner
+            android:id="@+id/categorySelectionSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="52dp"
+            android:layout_marginStart="52dp"
+            android:layout_toEndOf="@+id/insert_button"
+            android:layout_toRightOf="@+id/insert_button"></Spinner>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/insert_button"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:orientation="vertical">
+    <TextView
+        android:id="@+id/word_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Word: "
+        android:layout_marginLeft="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/synonym_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/word_text"
+        android:layout_below="@+id/word_text"
+        android:text="Synonims: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/translation_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/synonym_text"
+        android:layout_below="@+id/synonym_text"
+        android:text="Translation: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:id="@+id/word_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/synonym_value"
+        android:layout_toRightOf="@+id/translation_text"
+        android:paddingBottom="8dp"
+        android:paddingLeft="4dp"
+        android:text="TextView" />
+
+
+    <TextView
+        android:id="@+id/synonym_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/translation_value"
+        android:layout_alignLeft="@+id/word_value"
+        android:paddingLeft="4dp"
+        android:paddingBottom="7dp"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/translation_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/translation_text"
+        android:layout_alignBottom="@+id/translation_text"
+        android:layout_toRightOf="@+id/translation_text"
+        android:paddingLeft="5dp"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/useless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/translation_value"
+        android:layout_alignLeft="@+id/word_value"
+        android:paddingLeft="4dp"
+        android:paddingBottom="7dp"
+        android:visibility="invisible"
+        android:text="TextView" />
+</RelativeLayout>

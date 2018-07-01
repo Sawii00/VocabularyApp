@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question"
+        android:text="Testerino"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/answer_1"
+        android:layout_marginTop="10dp"
+        android:hint="First Synonym"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/answer_2"
+        android:layout_marginTop="10dp"
+        android:hint="Second Synonym"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/answer_3"
+        android:layout_marginTop="10dp"
+        android:hint="Third Synonym"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/answer_4"
+        android:layout_marginTop="10dp"
+        android:hint="Forth Synonym"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/answer_5"
+        android:layout_marginTop="10dp"
+        android:hint="Fifth Synonym"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/confirm_synonym_selection"/>
+
+
+
+
+</LinearLayout>
